@@ -2,11 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="assets\css\style.css">
+
+    <title>Giftastic</title>
 </head>
 <body>
-    
-</body>
+    <div class="container">
+      <div class="sub-title col-sm-12"><h3>Giphy What!</h3><br><p> Click on images to see their animation. Double click the first time you view it. After that only a single click is needed.</p></div>
+    <!-- Button Area -->
+    <div id="gifButtons" class="btns-wrap col-sm-12"></div>
+
+    <div class="col-sm-12">
+      <!-- Search for GIF area Form -->
+      <form id="myGifForm" role="form">
+        <h3><legend>Submit an Event/Action</legend></h3>
+        <div class="form-group col-sm-12">
+          <input type="text" id="event-input" />
+        </div>
+        <!-- Buttons to add and remove extra buttons-->
+        <input
+          id="addGif"
+          type="submit"
+          value="Add Event"
+          class="btn btn-primary"
+        />
+        <input
+          id="removeGif"
+          type="submit"
+          value="Remove Event"
+          class="btn btn-primary"
+        />
+      </form>
+    </div>
+   
+      <div class="gif-con col-sm-12">
+        <!-- Render GIFs Area -->
+        <div id="myGifs"></div>
+      </div>
+    </div>
+  </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+  </body>
 </html>
