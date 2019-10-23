@@ -1,12 +1,13 @@
 $(document).ready(function() {
-    
+    //getting a $ undefined error
 
 //api key: fhxV761nHZlyvKOCe8FSoC5J2sGD4Vwg
 //gif url: api.giphy.com/v1/gifs/search
 //sticker url: api.giphy.com/v1/stickers/search
 //request url: https://api.giphy.com/v1/gifs/search?api_key=fhxV761nHZlyvKOCe8FSoC5J2sGD4Vwg&q=&limit=25&offset=0&rating=G&lang=en
   //get search to work with html search button
-  $('button').on('click',function() {
+  $('searchBtn').on('click',function() {
+      console.log("Button Clicked")
     var searchBtn = $(this).data("search");
    console.log(searchBtn);
 
